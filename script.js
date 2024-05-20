@@ -4,11 +4,11 @@ function stringChop(str, size) {
   // your code here
 	let ans=[];
 	let i=0;
-	let j=size;
+	let j=size+1;
 	while(j<str.length){
-		ans.push(str.slice(i,j+1);
-		i=j+1;
-		j= j+size;
+		ans.push(str.slice(i,j);
+		i=j;
+		j= j+size-1;
 	}
 	ans.push(str.slice(i));
 	return ans;
